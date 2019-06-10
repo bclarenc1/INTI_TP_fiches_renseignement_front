@@ -9,6 +9,13 @@ import {HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import {RouterModule, Routes} from '@angular/router';
 import { ListerClubComponent } from './lister-club/lister-club.component';
+import { ModfierClubComponent } from './modfier-club/modfier-club.component';
+import { AjouterEcoleComponent } from './ajouter-ecole/ajouter-ecole.component';
+import { ListerEcoleComponent } from './lister-ecole/lister-ecole.component';
+import { ModifierEcoleComponent } from './modifier-ecole/modifier-ecole.component';
+import { AjouterCentredeloisirComponent } from './ajouter-centredeloisir/ajouter-centredeloisir.component';
+import { ModifierCentredeloisirComponent } from './modifier-centredeloisir/modifier-centredeloisir.component';
+import { ListerCentredeloisirComponent } from './lister-centredeloisir/lister-centredeloisir.component';
 
 // ++++++++++++++++++++ A modifier +++++++++++++++++++++++++
 
@@ -22,7 +29,14 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     AjouterClubComponent,
-    ListerClubComponent
+    ListerClubComponent,
+    ModfierClubComponent,
+    AjouterEcoleComponent,
+    ListerEcoleComponent,
+    ModifierEcoleComponent,
+    AjouterCentredeloisirComponent,
+    ModifierCentredeloisirComponent,
+    ListerCentredeloisirComponent
   ],
   imports: [
     BrowserModule,
