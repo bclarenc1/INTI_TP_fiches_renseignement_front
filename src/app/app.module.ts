@@ -16,12 +16,14 @@ import { ModifierEcoleComponent } from './modifier-ecole/modifier-ecole.componen
 import { AjouterCentredeloisirComponent } from './ajouter-centredeloisir/ajouter-centredeloisir.component';
 import { ModifierCentredeloisirComponent } from './modifier-centredeloisir/modifier-centredeloisir.component';
 import { ListerCentredeloisirComponent } from './lister-centredeloisir/lister-centredeloisir.component';
+import { AjouterResplegalComponent } from './ajouter-resplegal/ajouter-resplegal.component';
+import { ModifierResplegalComponent } from './modifier-resplegal/modifier-resplegal.component';
+import { ListResplegalsComponent } from './list-resplegals/list-resplegals.component';
 
 // ++++++++++++++++++++ A modifier +++++++++++++++++++++++++
 
 const appRoutes: Routes = [
     {path: 'ajouterClub', component: AjouterClubComponent},
-    {path: '', component: },
     {path: '', redirectTo: '/listClubs', pathMatch: 'full'}
 ];
 
@@ -36,7 +38,10 @@ const appRoutes: Routes = [
     ModifierEcoleComponent,
     AjouterCentredeloisirComponent,
     ModifierCentredeloisirComponent,
-    ListerCentredeloisirComponent
+    ListerCentredeloisirComponent,
+    AjouterResplegalComponent,
+    ModifierResplegalComponent,
+    ListResplegalsComponent
   ],
   imports: [
     BrowserModule,

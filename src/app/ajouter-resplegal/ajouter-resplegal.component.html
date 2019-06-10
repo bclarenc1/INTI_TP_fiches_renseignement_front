@@ -1,0 +1,24 @@
+<div class="container spacer">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Ajouter Responsable Légal</div>
+        <div class="pannel-body">
+       
+            <table>
+               <tr>
+                    <td>Nom :</td>
+                    <td> 
+                <input type="text" [(ngModel)]="respLegal.nomResp" />
+                </td>
+                </tr>
+                <tr>
+                    <td>Prenom:</td>
+                    <td><input type="text" [(ngModel)]="respLegal.prenomResp" /></td>
+                </tr>
+            
+            </table>
+             <button (click)="addRespLegal()"> Ajouter Responsable Légal</button> 
+
+        </div>
+    </div>
+
+</div>

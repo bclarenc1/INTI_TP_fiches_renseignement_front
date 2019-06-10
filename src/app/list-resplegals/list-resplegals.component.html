@@ -1,0 +1,21 @@
+<div class="container spacer">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Liste Responsable Légal</div>
+        <div class="pannel-body">
+            <table class="table table-striped">
+                <tr>
+                    <td>idResp</td>
+                    <td>nomResp</td>
+                    <td>prenomResp</td>
+                </tr>
+                <tr *ngFor="let p of pageRespLegals">
+                    <td>{{p.idResp}}</td>
+                    <td>{{p.nomResp}}</td>
+                    <td>{{p.prenomResp}}</td>
+                    <td><button (click)="deleteRespLegal(p.idResp)">Delete</button> </td> 
+                    <td><button (click)="editRespLegal(p.idResp)">Detail</button> </td> 
+                    </tr> 
+                </table> 
+            </div> 
+        </div> 
+    </div>
