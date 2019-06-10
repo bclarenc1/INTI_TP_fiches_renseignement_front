@@ -1,0 +1,22 @@
+<div class="container spacer">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Liste des Clubs</div>
+        <div class="pannel-body">
+            <table class="table table-striped">
+                <tr>
+                    <td>IdEta</td>
+                    <td>NomEta</td>
+                    <td>Discipline</td>
+
+                </tr>
+                <tr *ngFor="let p of pageClubs">
+                    <td>{{p.idEta}}</td>
+                    <td>{{p.nomEta}}</td>
+                    <td>{{p.discipline}}</td>
+                    <td><button (click)="deleteClub(p.idEta)">Delete</button> </td> 
+                    <td><button (click)="editClub(p.idEta)">Detail</button> </td> 
+                    </tr> 
+                </table> 
+            </div> 
+        </div> 
+    </div>
