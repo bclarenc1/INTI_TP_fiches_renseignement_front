@@ -19,6 +19,7 @@ import { ListerCentredeloisirComponent } from './lister-centredeloisir/lister-ce
 import { AjouterResplegalComponent } from './ajouter-resplegal/ajouter-resplegal.component';
 import { ModifierResplegalComponent } from './modifier-resplegal/modifier-resplegal.component';
 import { ListResplegalsComponent } from './list-resplegals/list-resplegals.component';
+import { PageRespComponent } from './page-resp/page-resp.component';
 
 // ++++++++++++++++++++ A modifier +++++++++++++++++++++++++
 
@@ -41,7 +42,8 @@ const appRoutes: Routes = [
     ListerCentredeloisirComponent,
     AjouterResplegalComponent,
     ModifierResplegalComponent,
-    ListResplegalsComponent
+    ListResplegalsComponent,
+    PageRespComponent
   ],
   imports: [
     BrowserModule,
