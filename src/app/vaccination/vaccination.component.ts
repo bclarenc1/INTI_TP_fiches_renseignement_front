@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   templateUrl: './vaccination.component.html',
   styleUrls: ['./vaccination.component.css']
 })
-export class VaccinationComponent implements OnInit {
+export class VaccinationComponent  {
     ajour:any;
     idEnf:any;
     fvaccination:any
