@@ -1,34 +1,32 @@
 <div>
-    <table>
-        <tr>
-            <thead>
-                <div class="container">
-                    <h2>Liste des enfants en BDD</h2>
-                    <table class="table table-striped">
-                        <tr>
-                            <th>ID Responsable legal</th>
-                            <th>ID Enfant</th>
-                            <th>Nom de l'enfant</th>
-                            <th>Prenom de l'enfant</th>
-                            <th>Age</th>
-                            <th>Fiche principale</th>
-                            <th>Fiche medicale </th>
-                            <th>Fiche droit à l'image </th>
-                            <th>Fiche vaccination </th>
-                        </tr>
+    <tr>
+        <div class="container">
+            <h2>Liste des enfants en BDD</h2>
+            <table class="table table-striped">
+                <tr>
+                    <td>ID Responsable legal</td>
+                    <td>ID Enfant</td>
+                    <td>Nom de l'enfant</td>
+                    <td>Prenom de l'enfant</td>
+                    <td>Age</td>
+                    <td>Fiche principale</td>
+                    <td>Fiche medicale </td>
+                    <td>Fiche droit à l'image </td>
+                    <td>Fiche vaccination </td>
+                </tr>
 
-                        <td>
-                            <tr *ngFor="let e of listEnfants">
-                                <!-- verifier "listeEnfant"-->
-                                <td>{{e.idResp}}</td>
-                                <td>{{e.idEnf}}</td>
-                                <td>{{e.nomEnf}}</td>
-                                <td>{{e.prenomEnf}}</td>
-                                <td>{{e.age}}</td>
-                                <td>bouton f principal </td>
-                                <td>bouton f medicale </td>
-                                <td>bouton f image </td>
-                                <td>bouton f vaccination </td>
-                            </tr>                  
-                    </table>
-                </div>
+                <td>
+                    <tr *ngFor="let e of listEnfants">                   
+                        <td>{{e.idResp}}</td>
+                        <td>{{e.idEnf}}</td>
+                        <td>{{e.nomEnf}}</td>
+                        <td>{{e.prenomEnf}}</td>
+                        <td>{{e.age}}</td>
+                        <td>bouton f principal </td>
+                        <td>bouton f medicale </td>
+                        <td>bouton f image </td>
+                        <td>bouton f vaccination </td>
+                    </tr>
+                </td>
+            </table>
+        </div>
