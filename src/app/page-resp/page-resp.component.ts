@@ -18,5 +18,8 @@ export class PageRespComponent implements OnInit {
             console.log(err);
         });
   }
+ versfMedicale(id: number) {
 
+    this.router.navigate(["/fmedicales",id]);
+}
 }

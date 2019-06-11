@@ -1,3 +1,27 @@
-<p>
-  fmedicale works!
-</p>
+<div class="container spacer">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Formulaire Medicale de l'enfant a completer</div>
+        <div class="pannel-body">
+       
+            <table>
+                <tr>
+                    <td>Allergies:</td>
+                    <td> 
+                <input type="text" [(ngModel)]="fmedicale.allergies" />
+                </td>
+                </tr>
+                <tr>
+                    <td>Antecedents:</td>
+                    <td><input type="text" [(ngModel)]="fmedicale.antecedents" /></td>
+                </tr>
+                
+            </table>
+             <button (click)="fmedicaleEnf()"> Ajouter le Formulaire Medicale</button>
+
+        </div>
+    </div>
+
+
+
+
+</div>
