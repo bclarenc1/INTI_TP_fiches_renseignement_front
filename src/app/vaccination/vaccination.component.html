@@ -1,6 +1,11 @@
 <div class="container">
-   <label> <input type="radio" ng-model="ajour" value="true" ng-value="true">Vaccins a jour</label>
-    <label> <input type="radio" ng-model="ajour" value="false" ng-value="false">Vaccins a jour</label>
- <button (click)="fvacc()"> Ajouter le Formulaire de vaccination</button>
-
+    <div>
+        <label> <input type="radio" ng-model="ajour" value="true" ng-value="true">Vaccins a jour</label>
+    </div>
+    <div>
+        <label> <input type="radio" ng-model="ajour" value="false" ng-value="false">Vaccins non a jour</label>
+    </div>
+    <div>
+        <button (click)="fvacc()"> Ajouter le Formulaire de vaccination</button>
+    </div>
 </div>
