@@ -8,11 +8,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./page-resp.component.css']
 })
 export class PageRespComponent implements OnInit {
-    
+
     listEnfants: any;
   constructor(private service: EnfantService, private router: Router) { }
 
-  
 
   ngOnInit() {this.service.ListEnfants().subscribe(data => {this.listEnfants = data;
     }, err => {
