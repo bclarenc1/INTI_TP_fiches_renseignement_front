@@ -21,8 +21,8 @@ export class PageRespComponent implements OnInit {
  versfMedicale(idEnf: number) {
     this.router.navigate(['/fmedicale/' + idEnf]);
  }
-versfPrincipal(idEnf: number) {
-    this.router.navigate(['/fprincipal/' + idEnf]);
+versfPrincipale(idEnf: number) {
+    this.router.navigate(['/fprincipale/' + idEnf]);
 }
 versfImage(idEnf: number) {
     this.router.navigate(['/fimage/' + idEnf]);
