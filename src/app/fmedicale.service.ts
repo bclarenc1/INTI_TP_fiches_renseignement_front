@@ -9,7 +9,7 @@ export class FmedicaleService {
 
   constructor(private http: HttpClient) { }
 
-   fmedicale(fmedicale) {
-      return this.http.post('http://localhost:8080/fmedicales/', fmedicale);
+   fmedicale(id, fmedicale) {
+      return this.http.post('http://localhost:8080/fmedicales/' + id , fmedicale);
   }
 }
