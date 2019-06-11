@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {EnfantService } from '../enfant.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-page-resp',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./page-resp.component.css']
 })
 export class PageRespComponent implements OnInit {
+    
+    listEnfants: any;
+  constructor(private service: EnfantService, private router: Router) { }
 
-  constructor() { }
+  
 
-  ngOnInit() {
+  ngOnInit() {this.service.ListEnfants().subscribe(data => {this.listEnfants = data;
+    }, err => {
+            console.log(err);
+        });
   }
 
 }

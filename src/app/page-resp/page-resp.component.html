@@ -1,3 +1,34 @@
-<p>
-  page-resp works!
-</p>
+<div>
+    <table>
+        <tr>
+            <thead>
+                <div class="container">
+                    <h2>Liste des enfants en BDD</h2>
+                    <table class="table table-striped">
+                        <tr>
+                            <th>ID Responsable legal</th>
+                            <th>ID Enfant</th>
+                            <th>Nom de l'enfant</th>
+                            <th>Prenom de l'enfant</th>
+                            <th>Age</th>
+                            <th>Fiche principale</th>
+                            <th>Fiche medicale </th>
+                            <th>Fiche droit à l'image </th>
+                            <th>Fiche vaccination </th>
+                        </tr>
+
+                        <td>
+                            <tr *ngFor="let e of listEnfants">
+                                <!-- verifier "listeEnfant"-->
+                                <td>{{e.idResp}}</td>
+                                <td>{{e.idEnf}}</td>
+                                <td>{{e.nomEnf}}</td>
+                                <td>{{e.prenomEnf}}</td>
+                                <td>{{e.age}}</td>
+                                <td>bouton f principal </td>
+                                <td>bouton f medicale </td>
+                                <td>bouton f image </td>
+                                <td>bouton f vaccination </td>
+                            </tr>                  
+                    </table>
+                </div>
