@@ -15,18 +15,17 @@
                     <td>Fiche vaccination </td>
                 </tr>
 
-                <td>
                     <tr *ngFor="let e of listEnfants">                   
                         <td>{{e.idResp}}</td>
                         <td>{{e.idEnf}}</td>
                         <td>{{e.nomEnf}}</td>
                         <td>{{e.prenomEnf}}</td>
                         <td>{{e.age}}</td>
-                        <td>bouton f principal </td>
-                        <td><button (click)="versfMedicale(e.idResp)">Formilaire Medical</button> </td> 
-                        <td>bouton f image </td>
-                        <td>bouton f vaccination </td>
+
+                        <td><button (click)="versfMedicale(e.idEnf)">Formulaire Medical</button> </td>
+                        <td><button (click)="versfPrincipal(e.idEnf)">Formulaire Principal</button> </td>
+                        <td><button (click)="versfImage(e.idEnf)">Formulaire Image</button> </td>
+                        <td><button (click)="versfVaccination(e.idEnf)">Formulaire Vaccination</button> </td> 
                     </tr>
-                </td>
             </table>
         </div>

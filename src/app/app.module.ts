@@ -7,7 +7,7 @@ import { AjouterClubComponent } from './ajouter-club/ajouter-club.component';
 
 import {HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
-import {RouterModule, Routes} from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { ListerClubComponent } from './lister-club/lister-club.component';
 import { ModfierClubComponent } from './modfier-club/modfier-club.component';
 import { AjouterEcoleComponent } from './ajouter-ecole/ajouter-ecole.component';
@@ -22,6 +22,8 @@ import { ListResplegalsComponent } from './list-resplegals/list-resplegals.compo
 import { PageRespComponent } from './page-resp/page-resp.component';
 import { FmedicaleComponent } from './fmedicale/fmedicale.component';
 import { VaccinationComponent } from './vaccination/vaccination.component';
+import { FprincipaleComponent } from './fprincipale/fprincipale.component';
+import { FimageComponent } from './fimage/fimage.component';
 
 // ++++++++++++++++++++ A modifier +++++++++++++++++++++++++
 
@@ -47,7 +49,9 @@ const appRoutes: Routes = [
     ListResplegalsComponent,
     PageRespComponent,
     FmedicaleComponent,
-    VaccinationComponent
+    VaccinationComponent,
+    FprincipaleComponent,
+    FimageComponent
   ],
   imports: [
     BrowserModule,

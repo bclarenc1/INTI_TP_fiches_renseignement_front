@@ -18,8 +18,16 @@ export class PageRespComponent implements OnInit {
             console.log(err);
         });
   }
- versfMedicale(id: number) {
-
-    this.router.navigate(["/fmedicales",id]);
+ versfMedicale(idEnf: number) {
+    this.router.navigate(['/fmedicale/' + idEnf]);
+ }
+versfPrincipal(idEnf: number) {
+    this.router.navigate(['/fprincipal/' + idEnf]);
+}
+versfImage(idEnf: number) {
+    this.router.navigate(['/fimage/' + idEnf]);
+}
+versfVaccination(idEnf: number) {
+    this.router.navigate(['/vaccination/' + idEnf]);
 }
 }

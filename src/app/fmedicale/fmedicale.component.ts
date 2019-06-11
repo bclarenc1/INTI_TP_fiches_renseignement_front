@@ -10,26 +10,24 @@ import { ActivatedRoute } from '@angular/router';
 export class FmedicaleComponent implements OnInit {
 
   constructor(private service: FmedicaleService, private router: ActivatedRoute) { }
+    enfant = {
+        idEnf: 0
+    }
 
    fmedicale = {
         allergies: '',
         antecedents: ''
 
     };
-id: 0;
 
   ngOnInit() {
-      this.id = this.router.snapshot.params['id'];
-      this.service.getFmedicale(this.id).subscribe(
-          data => {
-              this.fmedicale.allergies = data['allergies'];
-              this.fmedicale.antecedents = data['antecedents'];
+      this.enfant.idEnf = this.router.snapshot.params['id'];
+
           }
-      )
-  }
 
 
-  fmedicaleEnf()   {this.service.fMedicale(this.id, this.fmedicale).subscribe(data => {
+
+  fmedicaleEnf()   {this.service.fMedicale(this.enfant.idEnf, this.fmedicale).subscribe(data => {
           this.fmedicale.allergies = data['allergies'];
           this.fmedicale.antecedents = data['antecedents'];
       });

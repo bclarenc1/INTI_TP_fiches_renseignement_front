@@ -3,13 +3,17 @@ import { HttpClient } from '@angular/common/http';
 
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root'
 })
 export class FvaccinationService {
 
-  constructor(private http: HttpClient) { }
+    constructor(private http: HttpClient) { }
 
-   addFvaccination(idEnf, fvaccination) {
-      return this.http.post('http://localhost:8080/fvaccinations/' + idEnf, fvaccination);
-  }
-}
+    fVaccination(idEnf, fvaccination) {
+        return this.http.post('http://localhost:8080/fvaccinations/' + idEnf, fvaccination);
+    }
+
+    getFvaccination(idEnf) {
+        return this.http.get('http://localhost:8080/fvaccinations/' + idEnf);
+        }
+    }

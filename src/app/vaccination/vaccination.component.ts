@@ -14,7 +14,7 @@ export class VaccinationComponent  {
 
   constructor(private service: FvaccinationService, private router: Router) { }
 
- fvacc() {this.service.addFvaccination(this.idEnf, this.fvaccination).subscribe(data => {this.ajour = data;
+ fvacc() {this.service.fVaccination(this.idEnf, this.fvaccination).subscribe(data => {this.ajour = data;
     }, err => {
             console.log(err);
         });
