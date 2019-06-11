@@ -21,6 +21,7 @@ import { ModifierResplegalComponent } from './modifier-resplegal/modifier-resple
 import { ListResplegalsComponent } from './list-resplegals/list-resplegals.component';
 import { PageRespComponent } from './page-resp/page-resp.component';
 import { FmedicaleComponent } from './fmedicale/fmedicale.component';
+import { VaccinationComponent } from './vaccination/vaccination.component';
 
 // ++++++++++++++++++++ A modifier +++++++++++++++++++++++++
 
@@ -45,7 +46,8 @@ const appRoutes: Routes = [
     ModifierResplegalComponent,
     ListResplegalsComponent,
     PageRespComponent,
-    FmedicaleComponent
+    FmedicaleComponent,
+    VaccinationComponent
   ],
   imports: [
     BrowserModule,
