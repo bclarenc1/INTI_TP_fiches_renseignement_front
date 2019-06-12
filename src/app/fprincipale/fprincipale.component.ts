@@ -31,6 +31,7 @@ export class FprincipaleComponent implements OnInit {
   fprincipaleEnf()   {this.service.fPrincipale(this.enfant.idEnf, this.fprincipale).subscribe(data => {
           this.fprincipale.adresse = data['adresse'];
           this.fprincipale.telephone = data['antecedents'];
+
       });
 
 }

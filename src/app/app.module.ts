@@ -3,7 +3,6 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { AjouterClubComponent } from './ajouter-club/ajouter-club.component';
 
 import {HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
@@ -28,14 +27,13 @@ import { FimageComponent } from './fimage/fimage.component';
 // ++++++++++++++++++++ A modifier +++++++++++++++++++++++++
 
 const appRoutes: Routes = [
-    {path: 'ajouterClub', component: AjouterClubComponent},
-    {path: '', redirectTo: '/listClubs', pathMatch: 'full'}
+    {path: 'page-resp', component: PageRespComponent},
+   // {path: '', redirectTo: '/listClubs', pathMatch: 'full'}
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    AjouterClubComponent,
     ListerClubComponent,
     ModfierClubComponent,
     AjouterEcoleComponent,
