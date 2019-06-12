@@ -1,6 +1,6 @@
-<h1>notice</h1><br/><br/>
-<h4>-Les inscrptions ecole faire tous les formulaires</h4><br/>
-  <h4>  -Les inscrptions centre de loisir uniquement fomulaire image + formulaire principal.....blabla...</h4><br/><br/>
+<br/><h2>notice</h2><br/><br/>
+<p>Cliquer sur les boutons de la ligne de votre enfant, pour creer un formulaire et lui attribuer.</p><br/>
+
   
 <div>
     <tr>
@@ -13,10 +13,10 @@
                     <td>Nom de l'enfant</td>
                     <td>Prenom de l'enfant</td>
                     <td>Age</td>
-                    <td>Fiche principale</td>
-                    <td>Fiche medicale </td>
-                    <td>Fiche droit a l'image </td>
-                    <td>Fiche vaccination </td>
+                    <td>Creer + attribuer fiche principale</td>
+                    <td>Creer + attribuer fiche medicale </td>
+                    <td>Creer + attribuer fiche droit image</td>
+                    <td>Creer + attribuer fiche vaccination </td>
                 </tr>
 
                     <tr *ngFor="let e of listEnfants">                   
@@ -26,10 +26,10 @@
                         <td>{{e.prenomEnf}}</td>
                         <td>{{e.age}}</td>
 
-                        <td><button (click)="versfMedicale(e.idEnf)">Formulaire Medical</button> </td>
-                        <td><button (click)="versfPrincipale(e.idEnf)">Formulaire Principal</button> </td>
-                        <td><button (click)="versfImage(e.idEnf)">Formulaire Image</button> </td>
-                        <td><button (click)="versfVaccination(e.idEnf)">Formulaire Vaccination</button> </td> 
+                        <td><button (click)="versfMedicale(e.idEnf)">Formulaire medical</button> </td>
+                        <td><button (click)="versfPrincipale(e.idEnf)">Formulaire principal</button> </td>
+                        <td><button (click)="versfImage(e.idEnf)">Formulaire image</button> </td>
+                        <td><button (click)="versfVaccination(e.idEnf)">Formulaire vaccination</button> </td> 
                     </tr>
             </table>
         </div>

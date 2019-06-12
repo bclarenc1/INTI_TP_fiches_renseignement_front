@@ -9,7 +9,7 @@ export class FimageService {
 
   constructor(private http: HttpClient) { }
 
-   fImage(idEnf, fimage) {
+   fimage(idEnf, fimage) {
       return this.http.post('http://localhost:8080/fimages/' + idEnf, fimage);
   }
 

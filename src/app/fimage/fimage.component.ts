@@ -15,15 +15,17 @@ export class FimageComponent implements OnInit {
     }
 
    fimage = {
-        autorisation: ''
+        autorisation: true
     };
+
+
 
   ngOnInit() {
       this.enfant.idEnf = this.router.snapshot.params['idEnf'];
 
           }
 
-  fimageEnf()   {this.service.fImage(this.enfant.idEnf, this.fimage).subscribe(data => {
+  fimageEnf()   {this.service.fimage(this.enfant.idEnf, this.fimage).subscribe(data => {
           this.fimage.autorisation = data['autorisation'];
       });
 
