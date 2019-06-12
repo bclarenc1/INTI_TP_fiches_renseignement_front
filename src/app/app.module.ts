@@ -24,6 +24,7 @@ import { VaccinationComponent } from './vaccination/vaccination.component';
 import { FprincipaleComponent } from './fprincipale/fprincipale.component';
 import { FimageComponent } from './fimage/fimage.component';
 import { DemandeficheComponent } from './demandefiche/demandefiche.component';
+import { AttribuerEnfRespComponent } from './attribuer-enf-resp/attribuer-enf-resp.component';
 
 // ++++++++++++++++++++ A modifier +++++++++++++++++++++++++
 
@@ -51,7 +52,8 @@ const appRoutes: Routes = [
     VaccinationComponent,
     FprincipaleComponent,
     FimageComponent,
-    DemandeficheComponent
+    DemandeficheComponent,
+    AttribuerEnfRespComponent
   ],
   imports: [
     BrowserModule,
