@@ -9,8 +9,8 @@ export class FmedicaleService {
 
   constructor(private http: HttpClient) { }
 
-   fMedicale(id, fmedicale) {
-      return this.http.post('http://localhost:8080/fmedicales/' + id , fmedicale);
+   fMedicale(idEnf, fmedicale) {
+      return this.http.post('http://localhost:8080/fmedicales/' + idEnf , fmedicale);
   }
   getFmedicale(id) {
       return this.http.get('http://localhost:8080/fmedicales/' + id);

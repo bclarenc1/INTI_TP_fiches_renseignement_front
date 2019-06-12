@@ -19,7 +19,7 @@ export class FimageComponent implements OnInit {
     };
 
   ngOnInit() {
-      this.enfant.idEnf = this.router.snapshot.params['id'];
+      this.enfant.idEnf = this.router.snapshot.params['idEnf'];
 
           }
 

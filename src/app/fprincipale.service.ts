@@ -9,8 +9,8 @@ export class FprincipaleService {
 
   constructor(private http: HttpClient) { }
 
-   fPrincipale(id, fprincipale) {
-      return this.http.post('http://localhost:8080/fprincipales/' + id, fprincipale );
+   fPrincipale(idEnf, fprincipale) {
+      return this.http.post('http://localhost:8080/fprincipales/' + idEnf, fprincipale );
   }
    getFvaccination(id) {
     return this.http.get('http://localhost:8080/fprincipales/' + id);
