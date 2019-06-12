@@ -10,10 +10,16 @@ import { Router } from '@angular/router';
 export class PageRespComponent implements OnInit {
 
     listEnfants: any;
+    listRespLegals: any;
   constructor(private service: EnfantService, private router: Router) { }
 
 
   ngOnInit() {this.service.ListEnfants().subscribe(data => {this.listEnfants = data;
+    }, err => {
+            console.log(err);
+        });
+
+    ngOnInit() {this.service.ListRespLegals().subscribe(data => {this.listRespLegals = data;
     }, err => {
             console.log(err);
         });
@@ -28,6 +34,9 @@ versfImage(idEnf: number) {
     this.router.navigate(['/fimage/' + idEnf]);
 }
 versfVaccination(idEnf: number) {
+    this.router.navigate(['/vaccination/' + idEnf]);
+}
+versAttribuerEnfResp(idResp: number) {
     this.router.navigate(['/vaccination/' + idEnf]);
 }
 }

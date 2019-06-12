@@ -19,4 +19,13 @@ export class EnfantService {
   modifierRespLegal(idEnf, idResp) {
       return this.http.get('http://localhost:8080/enfant/' + idEnf + idResp);
   }
+
+  attribuerEnfantResp(idResp, enfant) {
+      return this.http.get('http://localhost:8080/enfant/' +idResp , enfant);
+  }
+
+//   a
+    ListRespLegals() {
+      return this.http.get('http://localhost:8080/respLegals/');
+}
 }

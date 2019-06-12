@@ -1,0 +1,27 @@
+<div class="container spacer">
+    <div class="panel panel-primary">
+        <div class="panel-heading">Attribution de l'enfant</div>
+        <div class="pannel-body">
+       
+            <table>
+                <tr>
+                    <td>Prenom de l'enfant:</td>
+                    <td> 
+                <input type="text" [(ngModel)]="enfant.prenomEnf" />
+                </td>
+                </tr>
+                <tr>
+                    <td>Nom de l'enfant:</td>
+                    <td><input type="text" [(ngModel)]="enfant.nomEnf" /></td>
+                </tr>
+                 <tr>
+                    <td>Age de l'enfant:</td>
+                    <td><input type="text" [(ngModel)]="enfant.ageEnf" /></td>
+                </tr>
+                
+            </table>
+             <button (click)=" attribuerEnfantResp()"> Valider l'attribution de l'enfant</button>
+
+        </div>
+    </div>
+</div>

@@ -19,15 +19,7 @@ export class ListResplegalsComponent implements OnInit {
             console.log(err);
         });
   }
-
-
-   deleteRespLegal(id: number) {
-   this.service.deleteRespLegal(id)
-     .subscribe(data => this.ngOnInit());
- }
-
- editRespLegal(id: number) {
-
-    this.router.navigate(["/editRespLegal",id]);
+versAttribuerEnfResp(idResp: number) {
+    this.router.navigate(['/vaccination/' + idResp]);
 }
 }
