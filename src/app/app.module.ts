@@ -23,6 +23,7 @@ import { FmedicaleComponent } from './fmedicale/fmedicale.component';
 import { VaccinationComponent } from './vaccination/vaccination.component';
 import { FprincipaleComponent } from './fprincipale/fprincipale.component';
 import { FimageComponent } from './fimage/fimage.component';
+import { DemandeficheComponent } from './demandefiche/demandefiche.component';
 
 // ++++++++++++++++++++ A modifier +++++++++++++++++++++++++
 
@@ -49,7 +50,8 @@ const appRoutes: Routes = [
     FmedicaleComponent,
     VaccinationComponent,
     FprincipaleComponent,
-    FimageComponent
+    FimageComponent,
+    DemandeficheComponent
   ],
   imports: [
     BrowserModule,
