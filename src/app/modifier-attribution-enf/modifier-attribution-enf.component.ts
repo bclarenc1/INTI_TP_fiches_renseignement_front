@@ -25,9 +25,9 @@ export class ModifierAttributionEnfComponent implements OnInit {
 
 
 
-  modifierAttributionEnfantResp()   {this.service.attribuerEnfantResp(this.resp.idResp, this.enfant).subscribe(data => {
-         
-          this.resp.idResp = data['idResp'];
+  modifierAttributionEnfantResp()   {this.service.modifierRespLegal(this.resp.idResp, this.enfant).subscribe(data => {
+
+   this.resp.idResp = data['idResp'];
       });
 
 }}
