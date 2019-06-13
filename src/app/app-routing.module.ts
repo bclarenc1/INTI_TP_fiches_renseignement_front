@@ -7,6 +7,7 @@ import { FprincipaleComponent } from './fprincipale/fprincipale.component';
 import { PageRespComponent } from './page-resp/page-resp.component';
 
 import { AttribuerEnfRespComponent } from './attribuer-enf-resp/attribuer-enf-resp.component';
+import { ModifierAttributionEnfComponent } from './modifier-attribution-enf/modifier-attribution-enf.component';
 
 const routes: Routes = [
     {path: 'fmedicale/:idEnf', component: FmedicaleComponent},
@@ -14,8 +15,8 @@ const routes: Routes = [
     {path: 'fprincipale/:idEnf', component: FprincipaleComponent},
     {path: 'vaccination/:idEnf', component: VaccinationComponent},
     {path: 'page-resp', component: PageRespComponent},
-    {path: 'attribuer-enf-resp', component: AttribuerEnfRespComponent},
-
+	{path: 'attribuer-enf-resp', component: AttribuerEnfRespComponent},
+	{path: 'ModifierAttributionEnf', component: ModifierAttributionEnfComponent},
 
 
 ];

@@ -40,5 +40,5 @@ versAttribuerEnfResp(idResp: number) {
     this.router.navigate(['/attribuer-enf-resp/' + idResp]);
 }
 versModifierRespLegal(idEnf: number, idResp: number) {
-    this.router.navigate(['/modifier-attribution-enf/' + idEnf + idResp]);
+    this.router.navigate(['/ModifierAttributionEnf/' + idEnf + idResp]);
 }}
