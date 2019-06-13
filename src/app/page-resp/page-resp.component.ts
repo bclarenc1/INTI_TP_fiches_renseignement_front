@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {EnfantService } from '../enfant.service';
 import { Router } from '@angular/router';
+import { ResplegalService } from '../resplegal.service';
 
 @Component({
   selector: 'app-page-resp',
@@ -10,10 +11,15 @@ import { Router } from '@angular/router';
 export class PageRespComponent implements OnInit {
 
     listEnfants: any;
-  constructor(private service: EnfantService, private router: Router) { }
+    pageRespLegals: any;
+  constructor(private service: EnfantService, private servicer: ResplegalService, private router: Router) { }
 
 
   ngOnInit() {this.service.ListEnfants().subscribe(data => {this.listEnfants = data;
+    }, err => {
+            console.log(err);
+        });
+    this.servicer.ListRespLegals().subscribe(data => {this.pageRespLegals = data;
     }, err => {
             console.log(err);
         });
@@ -31,6 +37,8 @@ versfVaccination(idEnf: number) {
     this.router.navigate(['/vaccination/' + idEnf]);
 }
 versAttribuerEnfResp(idResp: number) {
-    this.router.navigate(['/vaccination/' + idResp]);
+    this.router.navigate(['/attribuer-enf-resp/' + idResp]);
 }
-}
+versModifierRespLegal(idEnf: number, idResp: number) {
+    this.router.navigate(['/modifier-attribution-enf/' + idEnf + idResp]);
+}}

@@ -20,6 +20,7 @@ export class ListResplegalsComponent implements OnInit {
         });
   }
 versAttribuerEnfResp(idResp: number) {
-    this.router.navigate(['/vaccination/' + idResp]);
+    this.router.navigate(['/attribuer-enf-resp/' + idResp]);
 }
+
 }

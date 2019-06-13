@@ -13,19 +13,15 @@ export class EnfantService {
       return this.http.get('http://localhost:8080/enfants/');
 }
   getEnfant(id: number) {
-      return this.http.get('http://localhost:8080/enfant/' + id);
+      return this.http.get('http://localhost:8080/enfants/' + id);
   }
 
   modifierRespLegal(idEnf, idResp) {
-      return this.http.get('http://localhost:8080/enfant/' + idEnf + idResp);
+      return this.http.get('http://localhost:8080/enfants/' + idEnf + idResp);
   }
 
   attribuerEnfantResp(idResp, enfant) {
-      return this.http.get('http://localhost:8080/enfant/' +idResp , enfant);
+      return this.http.get('http://localhost:8080/enfants/' + idResp , enfant);
   }
 
-//   a
-    ListRespLegals() {
-      return this.http.get('http://localhost:8080/respLegals/');
-}
 }
